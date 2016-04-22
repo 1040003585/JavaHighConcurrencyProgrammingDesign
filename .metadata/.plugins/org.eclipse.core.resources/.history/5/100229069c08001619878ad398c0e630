@@ -1,0 +1,12 @@
+package _2_2初始线程_线程的基本操作._2_2_1新建线程;
+
+/**
+ * 
+ * @author admin：Wu_Being； Date&Time：2016-4-22 下午11:05:03；；
+ */
+public class CreateThread3withInterface {
+	public static void main(String[] args) {
+		Thread thread = new Thread((Runnable) new CreateThread3withInterface());
+		thread.start();
+	}
+}

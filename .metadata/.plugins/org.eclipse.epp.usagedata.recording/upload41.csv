@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+executed,command,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.edit.text.java.format,1461337922156
+executed,command,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.edit.text.java.format,1461337923125
+executed,command,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.edit.text.java.format,1461338031250
+executed,command,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.edit.text.java.format,1461338077640
+executed,command,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.edit.text.java.format,1461338080062
+executed,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.copy,1461338089828
+executed,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.paste,1461338093625
+executed,command,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.edit.text.java.format,1461338094593
+executed,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.file.save,1461338105875
+activated,view,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.PackageExplorer,1461338282484
+activated,editor,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.CompilationUnitEditor,1461338282781
+executed,command,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.edit.text.java.toggle.comment,1461338309812
+opened,editor,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.ClassFileEditor,1461338310843
+activated,editor,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.ClassFileEditor,1461338311015
+no handler,command,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.edit.text.java.toggle.comment,1461338311234
+activated,editor,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.ClassFileEditor,1461338313843
+activated,editor,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.CompilationUnitEditor,1461338315343
+executed,command,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.edit.text.java.toggle.comment,1461338316984
+executed,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.file.save,1461338320796
+activated,editor,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.ClassFileEditor,1461338330453
+executed,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.copy,1461338342562
+activated,editor,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.CompilationUnitEditor,1461338343687
+executed,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.undo,1461338349140
+executed,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.undo,1461338349406
+activated,editor,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.CompilationUnitEditor,1461338352406
