@@ -1,0 +1,16 @@
+package _1_5回到Java_JMM;
+/**
+ * 
+ * @author admin：Wu_Being
+ * Time:下午01:00:30
+ */
+public class _1_5_1原子性 {
+
+	/**
+	 * 
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+	}
+}

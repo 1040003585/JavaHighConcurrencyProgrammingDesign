@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/01第1章_走入并行世界/src/_1_5回到Java_JMM/_1_5_1原子性/MultiThreadLong.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="_1_5回到Java_JMM._1_5_1原子性.MultiThreadLong"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="01第1章_走入并行世界"/>
+</launchConfiguration>

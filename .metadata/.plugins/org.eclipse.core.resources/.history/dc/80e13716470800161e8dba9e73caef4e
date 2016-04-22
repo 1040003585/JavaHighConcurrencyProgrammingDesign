@@ -1,0 +1,13 @@
+package _1_5回到Java_JMM;
+
+public class _1_5_1原子性 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
