@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.lang.Runnable"/>
 <fullyQualifiedTypeName name="_1_5回到Java_JMM._1_5_1原子性.MultiThreadLong"/>
-<fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="_1_5回到Java_JMM._1_5_1原子性.MultiThreadLong.ChangeT"/>
 <fullyQualifiedTypeName name="_1_5回到Java_JMM._1_5_1原子性.MultiThreadLong.ReadT"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="_2_2初始线程_线程的基本操作._2_2_1新建线程.CreateThread3withInterface"/>
+<fullyQualifiedTypeName name="sun.awt.windows.ThemeReader"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
 </qualifiedTypeNameHistroy>
