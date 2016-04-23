@@ -1,0 +1,142 @@
+package _2_2初始线程_线程的基本操作._2_2_2终止线程;
+
+/**
+ * 
+ * @author admin：Wu_Being； Date&Time：2016-4-23 下午10:03:08；；
+ */
+public class StopThread_Safe {
+
+	public static User u = new User();//
+
+	public static class User {
+		private int id;
+		private String name;
+
+		public int getId() {
+			return id;
+		}
+
+		public void setId(int id) {
+			this.id = id;
+		}
+
+		public String getName() {
+			return name;
+		}
+
+		public void setName(String name) {
+			this.name = name;
+		}
+
+		public User() {
+			id = 0;
+			name = "0";
+		}
+
+		@Override
+		public String toString() {
+			return "User [id=" + id + ",name=" + name + "]";
+		}
+	}
+
+	/**
+	 * 
+	 * 
+	 * @author admin：Wu_Being； Date&Time：2016-4-23 下午10:17:01；；
+	 */
+	public static class ChangeObjectThread extends Thread {
+
+		// /////////////////////////////////////////stopme
+		volatile boolean stopme = false;
+
+		public void stopMe() {
+			stopme = true;
+		}// ////////////////////////////////////////stopme
+
+		@Override
+		public void run() {
+			// TODO Auto-generated method stub
+			// super.run();
+			while (true) {
+				// //////////////////////////////////////////////stopme
+				if (stopme) {
+					System.out.println("exit by stop me");
+					break;
+				}
+				// //////////////////////////////////////////////stopme
+				synchronized (u) {
+					int v = (int) (System.currentTimeMillis() / 1000);
+					u.setId(v);
+					try {
+						Thread.sleep(100);
+					} catch (InterruptedException e) {
+					}
+					u.setName(String.valueOf(v));
+
+				}
+				Thread.yield();
+			}
+
+		}
+	}
+
+	/**
+	 * 
+	 * @author admin：Wu_Being； Date&Time：2016-4-23 下午10:17:11；；
+	 */
+	public static class ReadObjectThread extends Thread {
+		@Override
+		public void run() {
+			while (true) {
+				synchronized (u) {
+					// if (u.getId() != Integer.parseInt(u.getName()))
+					{
+						System.out.println(u.toString());
+					}
+				}
+				Thread.yield();
+			}
+		}
+	}
+
+
+	/**
+	 * @param args
+	 * @throws InterruptedException
+	 */
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+
+		new ReadObjectThread().start();
+		while (true) {
+			// Thread tn = new ChangeObjectThread();
+			// tn.start();
+			// Thread.sleep(150);
+			// tn.stop();// ///
+			// tn.stopMe();//没有stopMe()方法
+
+			ChangeObjectThread tn = new ChangeObjectThread();
+			tn.start();
+			Thread.sleep(10);
+			tn.stopMe();
+
+			/**
+			 * ...
+			 * 
+			 * User [id=1461431323,name=1461431323]
+			 * 
+			 * User [id=1461431323,name=1461431323]
+			 * 
+			 * exit by stop me
+			 * 
+			 * User [id=1461431324,name=1461431324]
+			 * 
+			 * exit by stop me
+			 * 
+			 * User [id=1461431324,name=1461431324]...
+			 */
+		}
+
+	}
+
+}
