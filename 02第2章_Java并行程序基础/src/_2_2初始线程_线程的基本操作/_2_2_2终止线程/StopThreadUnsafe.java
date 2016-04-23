@@ -1,6 +1,5 @@
 package _2_2初始线程_线程的基本操作._2_2_2终止线程;
 
-import sun.print.resources.serviceui;
 
 /**
  * 
@@ -42,6 +41,7 @@ public class StopThreadUnsafe {
 			return "User [id=" + id + ",name=" + name + "]";
 		}
 	}
+	
 
 	/**
 	 * 
@@ -53,6 +53,7 @@ public class StopThreadUnsafe {
 			// TODO Auto-generated method stub
 			// super.run();
 			while (true) {
+				//同步http://www.cnblogs.com/benshan/p/3551987.html
 				synchronized (u) {
 					int v = (int) (System.currentTimeMillis() / 1000);
 					u.setId(v);
@@ -81,6 +82,7 @@ public class StopThreadUnsafe {
 			// TODO Auto-generated method stub
 			// super.run();
 			while (true) {
+				//同步http://www.cnblogs.com/benshan/p/3551987.html
 				synchronized (u) {
 					if (u.getId() != Integer.parseInt(u.getName())) {
 						System.out.println(u.toString());
@@ -91,6 +93,12 @@ public class StopThreadUnsafe {
 		}
 	}
 
+	/*
+	 * 疑解：
+	 * synchronized 与 Lock 的那点事
+	 * http://www.cnblogs.com/benshan/p/3551987.html
+	 */
+	
 	/**
 	 * @param args
 	 * @throws InterruptedException
