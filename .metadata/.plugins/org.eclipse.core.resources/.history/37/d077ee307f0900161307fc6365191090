@@ -52,7 +52,7 @@ public class StopThread_Unsafe {
 			// super.run();
 			System.out.println(getId() + ":change...");
 
-			while (true) {// while(true)可去，
+			while (true) {// 
 				// 同步http://www.cnblogs.com/benshan/p/3551987.html
 				System.out.println(getId() + ":" + 1);//
 				synchronized (u) {
@@ -90,7 +90,7 @@ public class StopThread_Unsafe {
 			while (true) // 一直读！！！！
 			{
 				// 同步http://www.cnblogs.com/benshan/p/3551987.html
-				//System.out.println(getId() + ":" + "read.in..");
+				System.out.println(getId() + ":" + "read.in..");
 				synchronized (u) {
 					if (u.getId() != Integer.parseInt(u.getName())) {
 						System.out.println(u.toString());
