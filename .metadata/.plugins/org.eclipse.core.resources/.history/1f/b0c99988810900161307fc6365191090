@@ -124,7 +124,7 @@ public class StopThread_Safe {
 			System.out.println("main...2");
 			ChangeObjectThread tn = new ChangeObjectThread();
 			System.out.println("main...2."+tn.getId());
-			tn.start();//->run()...
+			tn.start();
 			Thread.sleep(200);
 			tn.stopMe();//
 			System.out.println("main...2stopMe."+tn.getId());
