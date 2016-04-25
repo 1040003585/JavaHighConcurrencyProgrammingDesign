@@ -17,8 +17,7 @@ public class SimpleWn {
 				try {
 					System.out.println(System.currentTimeMillis()
 							+ ":T1 wait for object");
-					//object.wait(); // T1等待，并释放object锁
-					object.wait(2000);
+					object.wait(); // T1等待，并释放object锁
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -41,7 +40,7 @@ public class SimpleWn {
 				object.notify();// T2通知T1继续执行，但T1要等T2释放object锁后才能再获得object锁
 				System.out.println(System.currentTimeMillis() + ":T2 end");
 				try {
-					Thread.sleep(5000);
+					Thread.sleep(2000);
 				} catch (InterruptedException e) {
 					// TODO: handle exception
 				}
